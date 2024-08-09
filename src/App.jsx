@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./pages/Home";
-import LawnCarePage, { lawnCareLoader } from "./pages/LawnCarePage";
+import LawnCarePage, { LawnCareLoader } from "./pages/LawnCarePage";
 import GardenPage, { GardenCareLoader } from "./pages/GardenPage";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
@@ -20,7 +20,7 @@ const App = () => {
         <Route
           path="/lawncare/:id"
           element={<LawnCarePage />}
-          loader={lawnCareLoader}
+          loader={LawnCareLoader}
         />
         <Route
           path="/garden/:id"

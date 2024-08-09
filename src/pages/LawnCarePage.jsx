@@ -143,7 +143,7 @@ const LawnCarePage = () => {
   );
 };
 
-export const lawnCareLoader = async () => {
+export const LawnCareLoader = async () => {
   const res = await fetch("/data/lawnData.json");
   const data = await res.json();
   return data;

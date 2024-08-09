@@ -1,10 +1,38 @@
+import { toast } from "react-toastify";
+
 const Estimate = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "2bb18d84-2085-4bb6-a11d-9c86cb9b487e");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      toast.success("message successfully sent");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      toast.error("Error Occured on sumbit, please try again");
+    }
+  };
+
   return (
     <>
       <div className="w-full h-[80px] bg-green-950"></div>
       <div className=" bg-bannerlawn bg-no-repeat bg-cover border-t-2 w-full h-fit sm:h-[80vh] flex justify-center">
         <div className=" flex justify-center items-center w-[90%] sm:w-[60%]  ">
-          <form className="bg-white flex flex-col justify-between gap-8 m-2 h-fit w-[100%] md:w-[80%] lg:w-[70%] p-8 ">
+          <form
+            onSubmit={onSubmit}
+            className="bg-white flex flex-col justify-between gap-8 m-2 h-fit w-[100%] md:w-[80%] lg:w-[70%] p-8 "
+          >
             <h1 className="font-bold text-2xl md:text-3xl text-green-500">
               Schedule Free Estimate
             </h1>
@@ -43,7 +71,9 @@ const Estimate = () => {
                 required
               />
             </div>
-            <button className="text-white bg-green-500">Submit</button>
+            <button type="submit" className="text-white bg-green-500">
+              Submit
+            </button>
           </form>
         </div>
       </div>

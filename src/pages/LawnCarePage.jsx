@@ -1,17 +1,40 @@
 import { FaCheck } from "react-icons/fa";
 import { Link, useLoaderData, useParams } from "react-router-dom";
+import { toast } from "react-toastify";
 
 //fetching data for each package
 const LawnCarePage = () => {
   const lawnData = useLoaderData();
   let { id } = useParams();
-  console.log(id);
 
   // getting the package that matches the selected param from link
   const currentPackage = lawnData.packages.find(function (item) {
     return item.id === id;
   });
-  console.log(currentPackage);
+
+  //form
+  const onSubmit = async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "2bb18d84-2085-4bb6-a11d-9c86cb9b487e");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      toast.success("message successfully sent");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      toast.error("Error Occured on sumbit, please try again");
+    }
+  };
 
   return (
     <>
@@ -70,7 +93,10 @@ const LawnCarePage = () => {
           </div>
         </div>
 
-        <form className="bg-white flex flex-col justify-between gap-8 m-10 h-fit w-[80%] lg:w-[33%] p-8 ">
+        <form
+          onSubmit={onSubmit}
+          className="bg-white flex flex-col justify-between gap-8 m-10 h-fit w-[80%] lg:w-[33%] p-8 "
+        >
           <h1 className="font-bold text-2xl md:text-3xl">
             Schedule Free Estimate
           </h1>
@@ -108,7 +134,9 @@ const LawnCarePage = () => {
               required
             />
           </div>
-          <button className="text-white bg-green-500">Submit</button>
+          <button type="submit" className="text-white bg-green-500">
+            Submit
+          </button>
         </form>
       </div>
     </>

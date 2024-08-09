@@ -1,0 +1,54 @@
+{
+  "packages": [
+    {
+      "id": "regular",
+      "title": "Regular Weekly Mow",
+      "details": [
+        "Full Lawn Mow",
+        "Edging & Weed Wacking",
+        "Leaf Blowing",
+        "Fertilizing (added cost)"
+      ],
+      "link1": "premium",
+      "link2": "hoa",
+      "linkText1": "Premium Mow",
+      "linkText2": "HOA Premium Lawn Care",
+      "price": "45"
+    },
+    {
+      "id": "premium",
+      "title": "Premium Lawn Mow",
+      "details": [
+        "Full Lawn Mow",
+        "Edging & Weed Wacking",
+        "Leaf Blowing",
+        "Fertilizing (added cost)",
+        "Bush Trimming",
+        "Plant & Tree Care"
+      ],
+      "link1": "regular",
+      "link2": "hoa",
+      "linkText1": "Regular Mow",
+      "linkText2": "HOA Premium Lawn Care",
+      "price": "70"
+    },
+    {
+      "id": "hoa",
+      "title": "HOA Premium Lawn Care",
+      "details": [
+        "Full Lawn Mow",
+        "Edging & Weed Wacking",
+        "Leaf Blowing",
+        "Fertilizing + Pre-Emergent",
+        "Bush Trimming",
+        "Plant & Tree Care",
+        "Full Lawn Care",
+        "On Call Service"
+      ],
+      "link1": "regular",
+      "link2": "premium",
+      "linkText1": "Regular Mow",
+      "linkText2": "Premium Lawn Mow"
+    }
+  ]
+}

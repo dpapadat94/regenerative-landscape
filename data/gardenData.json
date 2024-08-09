@@ -1,0 +1,49 @@
+{
+  "packages": [
+    {
+      "id": "residential",
+      "title": "Full Residential Garden Service",
+      "details": [
+        "Full Care to All Areas of Yard",
+        "Consulting by Master Gardener",
+        "Full Bush Trimmings",
+        "Plant Care and Health",
+        "Dead Heading and Weeding",
+        "Fertilizing ",
+        "Vegetable Raised Garden Bed Care"
+      ],
+      "link1": "commercial",
+      "link2": "design",
+      "linkText1": "Commercial Garden/Plant Care",
+      "linkText2": "Landscape/Garden Design",
+      "time": "2-3 hours per week, or as needed"
+    },
+    {
+      "id": "commercial",
+      "title": "Commercial Garden/Plant Care",
+      "details": [
+        "Full Care & Health for Indoor/Outdoor plants",
+        "Trash Removal from Pots",
+        "Provide All Care Needed for Health and Foliage",
+        "Composting Services (add on)"
+      ],
+      "link1": "residential",
+      "link2": "design",
+      "linkText1": "Residential Gardener Service ",
+      "linkText2": "Landscape/Garden Design",
+      "time": "3-4 hours per week, or as needed"
+    },
+    {
+      "id": "design",
+      "title": "Landscape/Garden Design",
+      "description": [
+        " We design low maintenance, native gardens for food and pollinators. Best suited for areas with all aspects of garden taken into account. "
+      ],
+      "link1": "residential",
+      "link2": "commercial",
+      "linkText1": "Residential Garden Service",
+      "linkText2": "Commercial Garden/Plant Care",
+      "time": "$100 for Design"
+    }
+  ]
+}

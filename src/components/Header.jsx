@@ -2,10 +2,12 @@ import { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import logoGreen from "../assets/logoWordsGreen.png";
 import logo from "../assets/logoWordsWhite.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 const Header = () => {
   const [nav, setNav] = useState(false);
   const [sticky, setSticky] = useState(false);
+  const location = useLocation();
 
   const handleNav = () => {
     setNav(!nav);
@@ -27,6 +29,8 @@ const Header = () => {
     };
   }, []);
 
+  const isHomePage = location.pathname === "/";
+
   return (
     <div
       className={`w-full min-h-[50px] flex justify-between items-center z-10  bg-transparent  ${
@@ -40,11 +44,14 @@ const Header = () => {
       </Link>
 
       <ul className="hidden lg:flex">
-        <li>
-          <Link className="p-3 cursor-pointer hover:text-green-500 " to="/">
-            Home
-          </Link>
-        </li>
+        {isHomePage === false && (
+          <li>
+            <Link className="p-3 cursor-pointer hover:text-green-500 " to="/">
+              Home
+            </Link>
+          </li>
+        )}
+
         <li className={sticky ? "border-l-[1px]" : ""}>
           <Link
             className="cursor-pointer p-3 hover:text-green-500"
@@ -61,11 +68,26 @@ const Header = () => {
             Garden Care
           </Link>
         </li>
+        {isHomePage && (
+          <li className={sticky ? "border-l-[1px]" : ""}>
+            <ScrollLink
+              onClick={handleNav}
+              className="p-3 cursor-pointer hover:text-green-500"
+              to="servicearea"
+              smooth={true}
+              duration={300}
+            >
+              Service Area
+            </ScrollLink>
+          </li>
+        )}
+
         <li className={sticky ? "border-l-[1px]" : ""}>
           <Link className="p-3 cursor-pointer hover:text-green-500" to="about">
             About Us
           </Link>
         </li>
+
         <li className={sticky ? "border-l-[1px]" : ""}>
           <Link
             className=" p-3 cursor-pointer hover:text-green-500"
@@ -104,11 +126,14 @@ const Header = () => {
         }
       >
         <ul className="h-full w-full text-center pt-12">
-          <li>
-            <Link className="p-3 cursor-pointer text-xl" to="/">
-              Home
-            </Link>
-          </li>
+          {isHomePage === false && (
+            <li>
+              <Link className="p-3 cursor-pointer text-xl" to="/">
+                Home
+              </Link>
+            </li>
+          )}
+
           <li>
             <Link
               onClick={handleNav}
@@ -127,6 +152,19 @@ const Header = () => {
               Garden Care
             </Link>
           </li>
+          {isHomePage && (
+            <li>
+              <ScrollLink
+                onClick={handleNav}
+                className="p-3 text-xl"
+                to="servicearea"
+                smooth={true}
+                duration={300}
+              >
+                Service Area
+              </ScrollLink>
+            </li>
+          )}
 
           <li>
             <Link onClick={handleNav} className="p-3 text-xl" to="about">

@@ -47,7 +47,10 @@ const Gallary = () => {
 
   return (
     <>
-      <div id="gallery" className="hidden md:flex w-full h-full  m-auto">
+      <div
+        id="gallery"
+        className="hidden md:flex w-full h-full shadow-md  m-auto"
+      >
         <div className="w-[100%] h-[780px] m-auto py-16 px-16 text-gray-700 relative text-center">
           <h1 className="text-4xl mb-5 font-bold m-x-auto">See Our Work</h1>
           <div

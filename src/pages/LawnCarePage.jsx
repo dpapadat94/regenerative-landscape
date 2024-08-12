@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { FaCheck } from "react-icons/fa";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -38,6 +39,14 @@ const LawnCarePage = () => {
 
   return (
     <>
+      <Helmet>
+        <meta
+          name="description"
+          content="Explore Regenerative Landscape and Garden's exceptional lawn care packages in Charlotte. Tailored, reliable, eco-friendly solutions."
+        />
+
+        <title>Lawn Care | Regenerative Landscape and Garden</title>
+      </Helmet>
       <div className="w-full h-[80px] bg-green-950"></div>
       <div className="flex flex-col lg:flex-row justify-center items-center gap-6 lg:h-[90vh] px-2 md:pl-5 bg-bannerlawn bg-no-repeat bg-cover ">
         <div className="text-white w-[90%]  md:w-fit  flex flex-col gap-5 ">

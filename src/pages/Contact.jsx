@@ -1,6 +1,7 @@
 import { FaInstagram } from "react-icons/fa";
 import logo from "../assets/logo.png";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   const onSubmit = async (event) => {
@@ -28,6 +29,14 @@ const Contact = () => {
 
   return (
     <>
+      <Helmet>
+        <meta
+          name="description"
+          content="Get in contact with Regenerative Landscape and Garden of Charlotte. Tailored, Give us a call or submit or free estimate form."
+        />
+
+        <title>Contact | Regenerative Landscape and Garden</title>
+      </Helmet>
       <div className="w-full h-[80px] bg-green-950"></div>
       <div className="w-full h-fit sm:h-[80vh] flex flex-col sm:flex-row">
         <div className="w-full sm:w-[40%] flex flex-col items-center justify-evenly p-4 gap-4 sm:gap-0 ">

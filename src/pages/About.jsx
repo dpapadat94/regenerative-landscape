@@ -1,7 +1,16 @@
+import { Helmet } from "react-helmet-async";
 import logo from "../assets/logoTrans.png";
 const About = () => {
   return (
     <>
+      <Helmet>
+        <meta
+          name="description"
+          content="Discover the passion behind Regenerative Landscape and Garden—Charlotte's trusted landscaping team dedicated to excellence and sustainability."
+        />
+
+        <title>About | Regenerative Landscape and Garden</title>
+      </Helmet>
       <div className="w-full h-[80px] bg-green-950"></div>
       <div className="w-full h-fit sm:h-fit flex flex-col justify-center items-center bg-aboutbg bg-no-repeat bg-cover">
         <div className=" w-[90%] lg:w-[75%]  p-6 gap-8 flex flex-col justify-evenly items-center   ">
@@ -23,7 +32,11 @@ const About = () => {
             help the world, the pollinators, and the microbes in your soil, to
             improve the view you see everyday. &quot;
           </p>
-          <img src={logo} className="w-[70%] lg:w-[40%]" alt="" />
+          <img
+            src={logo}
+            className="w-[70%] lg:w-[40%]"
+            alt="regenerative landscape and garden logo"
+          />
         </div>
       </div>
     </>

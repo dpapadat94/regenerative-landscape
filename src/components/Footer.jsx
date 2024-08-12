@@ -25,7 +25,11 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <img src={logoWhite} alt="" className="hidden lg:flex w-52" />
+            <img
+              src={logoWhite}
+              alt="regenerative landscape and garden logo"
+              className="hidden lg:flex w-52"
+            />
 
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-300 sm:mb-0 ">
               <li>

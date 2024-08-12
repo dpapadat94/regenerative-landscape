@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Banner from "../components/Banner";
 import Gallary from "../components/Gallary";
 import Hero from "../components/Hero";
@@ -8,6 +9,14 @@ import Vision from "../components/Vision";
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <meta
+          name="description"
+          content="Transform your outdoor space with Regenerative Landscape and Garden—Charlotte's premier landscaping experts. Stunning, sustainable, superior."
+        />
+        <title>Regenerative Landscape and Garden</title>
+      </Helmet>
+
       <Hero />
       <Services />
       <Banner />

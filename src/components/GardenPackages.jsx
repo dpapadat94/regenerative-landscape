@@ -2,8 +2,13 @@
 import { Link } from "react-router-dom";
 //image imports
 import cover from "../assets/c2.png";
+import coverWebp from "../assets/c2.webp";
+
 import hotel from "../assets/hotel.png";
+import hotelWebp from "../assets/hotel.webp";
+
 import design from "../assets/design.png";
+import designWebp from "../assets/design.webp";
 
 const GardenPackages = () => {
   return (
@@ -16,7 +21,10 @@ const GardenPackages = () => {
           </h5>
         </Link>
         <Link to="garden/residential">
-          <img className="" src={cover} alt="" />
+          <picture>
+            <source srcSet={coverWebp} type="image/webp" />
+            <img className="" src={cover} alt="" />
+          </picture>
         </Link>
         <div className="p-5 inline-flex flex-col items-center ">
           <div className=" relative bottom-12 flex flex-col items-center bg-white shadow-md pt-3 pb-8 px-3">
@@ -46,7 +54,10 @@ const GardenPackages = () => {
           </h5>
         </Link>
         <Link to="garden/commercial">
-          <img className="" src={hotel} alt="" />
+          <picture>
+            <source srcSet={hotelWebp} type="image/webp" />
+            <img className="" src={hotel} alt="" />
+          </picture>
         </Link>
         <div className="p-5 inline-flex flex-col items-center ">
           <div className=" relative bottom-12 flex flex-col items-center bg-white shadow-md pt-3 pb-8 px-3">
@@ -74,7 +85,10 @@ const GardenPackages = () => {
           </h5>
         </Link>
         <Link to="garden/design">
-          <img className="" src={design} alt="" />
+          <picture>
+            <source srcSet={designWebp} type="image/webp" />
+            <img className="" src={design} alt="" />
+          </picture>
         </Link>
         <div className="p-5 inline-flex flex-col items-center ">
           <div className=" relative bottom-12 flex flex-col items-center bg-white shadow-md pt-3 pb-8 px-3">

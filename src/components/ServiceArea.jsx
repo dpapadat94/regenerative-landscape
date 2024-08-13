@@ -1,4 +1,6 @@
 import servicePic from "../assets/servicePic.png";
+import servicePicWebp from "../assets/servicePic.webp";
+
 import { IoLocationOutline } from "react-icons/io5";
 
 const ServiceArea = () => {
@@ -70,7 +72,10 @@ const ServiceArea = () => {
         </div>
       </div>
       <div className="hidden md:flex w-[50%] justify-center p-5">
-        <img src={servicePic} className="w-[100%] rounded-md" alt="" />
+        <picture>
+          <source srcSet={servicePicWebp} type="image/webp" />
+          <img src={servicePic} className="w-[100%] rounded-md" alt="" />
+        </picture>
       </div>
     </div>
   );

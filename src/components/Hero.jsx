@@ -2,11 +2,15 @@
 import { Link } from "react-router-dom";
 import { Link as Scroll } from "react-scroll";
 import cover from "../assets/cover.png";
+import coverWebp from "../assets/cover.webp";
 
 const Hero = () => {
   return (
     <div className="w-full h-[80vh]  ">
-      <img src={cover} alt="" className="w-full	h-full object-cover" />
+      <picture>
+        <source srcSet={coverWebp} type="image/webp" />
+        <img src={cover} alt="" className="w-full	h-full object-cover" />
+      </picture>
       <div className="max-w-[1140px] mx-auto">
         <div className="absolute top-[20%] w-full md:top-[30%] lg:max-w-[80%]  xl:max-w-[65%] flex flex-col gap-5 text-white p-4">
           <h1 className="font-bold text-3xl sm:text-5xl mb-3 pl-3 border-l-2 sm:border-l-8 border-green-500">

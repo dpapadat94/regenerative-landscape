@@ -1,9 +1,20 @@
 import mailbox from "../assets/mailbox.png";
+import mailboxWebp from "../assets/mailbox.webp";
+
 import frontChange from "../assets/frontChange.png";
+import frontChangeWebp from "../assets/frontChange.webp";
+
 import removal from "../assets/removal.png";
+import removalwebp from "../assets/removal.webp";
+
 import mulchBA from "../assets/mulchBA.png";
+import mulchBAwebp from "../assets/mulchBA.webp";
+
 import backyard from "../assets/backyard.png";
+import backyardwebp from "../assets/backyard.webp";
+
 import garden3 from "../assets/garden3.png";
+import garden3webp from "../assets/garden3.webp";
 
 //icons
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
@@ -12,21 +23,27 @@ import { useState } from "react";
 const slides = [
   {
     url: frontChange,
+    urlwebp: frontChangeWebp,
   },
   {
     url: mailbox,
+    urlwebp: mailboxWebp,
   },
   {
     url: removal,
+    urlwebp: removalwebp,
   },
   {
     url: mulchBA,
+    urlwebp: mulchBAwebp,
   },
   {
     url: backyard,
+    urlwebp: backyardwebp,
   },
   {
     url: garden3,
+    urlwebp: garden3webp,
   },
 ];
 
@@ -53,10 +70,14 @@ const Gallary = () => {
       >
         <div className="w-[100%] h-[780px] m-auto py-16 px-16 text-gray-700 relative text-center">
           <h1 className="text-4xl mb-5 font-bold m-x-auto">See Our Work</h1>
-          <div
-            style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-            className="w-full h-[70%] lg:h-[90%] bg-center bg-contain bg-no-repeat duration-500"
-          ></div>
+          <picture>
+            <source srcSet={slides[currentIndex].urlwebp} type="image/webp" />
+            <img
+              src={slides[currentIndex].url}
+              alt=""
+              className="w-full h-[70%] lg:h-[90%] object-contain duration-500"
+            />
+          </picture>
           {/* left arrow */}
           <div className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-20 text-2xl rounded-full p-2 bg-black/40 text-white cursor-pointer">
             <BsChevronCompactLeft size={30} onClick={prevImage} />
@@ -76,7 +97,10 @@ const Gallary = () => {
           Gallery
         </h1>
         {slides.map((item, index) => (
-          <img key={index} src={item.url} />
+          <picture key={index + 10}>
+            <source srcSet={item.urlwebp} type="image/webp" />
+            <img key={index} src={item.url} />
+          </picture>
         ))}
       </div>
     </>

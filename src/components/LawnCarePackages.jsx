@@ -2,8 +2,11 @@
 import { Link } from "react-router-dom";
 //image imports
 import lawn from "../assets/Lawn.png";
+import lawnWebp from "../assets/Lawn.webp";
 import regularLawn from "../assets/regularLawn.png";
+import regularLawnWebp from "../assets/regularLawn.webp";
 import hoa from "../assets/HOA.png";
+import hoaWebp from "../assets/HOA.webp";
 
 const LawnCarePackages = () => {
   return (
@@ -16,7 +19,10 @@ const LawnCarePackages = () => {
           </h5>
         </Link>
         <Link to="/lawncare/regular">
-          <img className="" src={regularLawn} alt="" />
+          <picture>
+            <source srcSet={regularLawnWebp} type="image/webp" />
+            <img className="" src={regularLawn} alt="Lawn Mowing image" />
+          </picture>
         </Link>
         <div className="p-5 inline-flex flex-col items-center ">
           <div className=" relative bottom-12 flex flex-col items-center bg-white shadow-md pt-3 pb-8 px-3">
@@ -47,7 +53,10 @@ const LawnCarePackages = () => {
           </h5>
         </Link>
         <Link to="lawncare/premium">
-          <img className="" src={lawn} alt="" />
+          <picture>
+            <source srcSet={lawnWebp} type="image/webp" />
+            <img className="" src={lawn} alt="" />
+          </picture>
         </Link>
         <div className="p-5 inline-flex flex-col items-center ">
           <div className=" relative bottom-12 flex flex-col items-center bg-white shadow-md pt-3 pb-8 px-3">
@@ -77,7 +86,10 @@ const LawnCarePackages = () => {
           </h5>
         </Link>
         <Link to="lawncare/hoa">
-          <img className="" src={hoa} alt="" />
+          <picture>
+            <source srcSet={hoaWebp} type="image/webp" />
+            <img className="" src={hoa} alt="" />
+          </picture>
         </Link>
         <div className="p-5 inline-flex flex-col items-center ">
           <div className=" relative bottom-12 flex flex-col items-center bg-white shadow-md pt-3 pb-8 px-3">

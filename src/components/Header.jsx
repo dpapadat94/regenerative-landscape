@@ -3,7 +3,7 @@ import { FaBars } from "react-icons/fa";
 import logoGreen from "../assets/logoWordsGreen.png";
 import logo from "../assets/logoWordsWhite.png";
 import { Link, useLocation } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
+import { Link as Scroll } from "react-scroll";
 const Header = () => {
   const [nav, setNav] = useState(false);
   const [sticky, setSticky] = useState(false);
@@ -70,7 +70,7 @@ const Header = () => {
         </li>
         {isHomePage && (
           <li className={sticky ? "border-l-[1px]" : ""}>
-            <ScrollLink
+            <Scroll
               onClick={handleNav}
               className="p-3 cursor-pointer hover:text-green-500"
               to="servicearea"
@@ -78,7 +78,7 @@ const Header = () => {
               duration={300}
             >
               Service Area
-            </ScrollLink>
+            </Scroll>
           </li>
         )}
 
@@ -109,10 +109,10 @@ const Header = () => {
       </Link>
 
       {/* mobile menu */}
-      <div onClick={handleNav} className="lg:hidden z-10">
+      <div onClick={handleNav} className="lg:hidden p-2 z-10">
         <FaBars
           size={20}
-          className={`mr-4 cursor-pointer ${
+          className={`mr-4  cursor-pointer ${
             sticky ? "text-gray-500" : "text-white"
           }`}
         />
@@ -153,17 +153,30 @@ const Header = () => {
             </Link>
           </li>
           {isHomePage && (
-            <li>
-              <ScrollLink
-                onClick={handleNav}
-                className="p-3 text-xl"
-                to="servicearea"
-                smooth={true}
-                duration={300}
-              >
-                Service Area
-              </ScrollLink>
-            </li>
+            <>
+              <li>
+                <Scroll
+                  onClick={handleNav}
+                  className="p-3 text-xl"
+                  to="servicearea"
+                  smooth={true}
+                  duration={300}
+                >
+                  Service Area
+                </Scroll>
+              </li>
+              <li>
+                <Scroll
+                  onClick={handleNav}
+                  className="p-3 cursor-pointer text-xl"
+                  to="gallery"
+                  smooth={true}
+                  duration={300}
+                >
+                  Gallery
+                </Scroll>
+              </li>
+            </>
           )}
 
           <li>

@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import ServiceArea from "../components/ServiceArea";
 import Services from "../components/Services";
 import Vision from "../components/Vision";
+import Testimonials from "../components/Testimonials";
 
 const Home = () => {
   return (
@@ -16,12 +17,12 @@ const Home = () => {
         />
         <title>Regenerative Landscape and Garden</title>
       </Helmet>
-
       <Hero />
       <Services />
       <Banner />
       <Vision />
       <Gallary />
+      <Testimonials />
       <ServiceArea />
     </div>
   );

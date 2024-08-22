@@ -49,13 +49,13 @@ const slides = [
 
 const Gallary = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  //code looks more complicated becasue we have to account for the when we click the next slide button on the last image
+  //code looks more complicated because we have to account for the when we click the next slide button on the last image
   const nextImage = () => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
-  //code looks more complicated becasue we have to account for the when we click the prev slide button on the 1st image
+  //code looks more complicated because we have to account for the when we click the prev slide button on the 1st image
   const prevImage = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
@@ -64,9 +64,11 @@ const Gallary = () => {
 
   return (
     <div id="gallery">
-      <div className="hidden md:flex w-full h-full shadow-md  m-auto">
+      <div className="hidden md:flex  w-full h-full shadow-md  m-auto">
         <div className="w-[100%] h-[780px] m-auto py-16 px-16 text-gray-700 relative text-center  ">
-          <h1 className="text-4xl mb-5 font-bold m-x-auto">See Our Work</h1>
+          <h1 className="text-4xl mb-5 pb-2 font-bold m-x-auto  ">
+            See Our Work
+          </h1>
           <picture>
             <source srcSet={slides[currentIndex].urlwebp} type="image/webp" />
             <img
@@ -90,7 +92,7 @@ const Gallary = () => {
         </div>
       </div>
       <div className="flex h-fit flex-col gap-3 items-center md:hidden">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-600 p-3  border-b-4 border-green-500">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-600 p-3 my-3 border-b-4 border-green-500">
           Gallery
         </h1>
         {slides.map((item, index) => (

@@ -42,10 +42,10 @@ const LawnCarePage = () => {
       <Helmet>
         <meta
           name="description"
-          content="Explore Regenerative Landscape and Garden's exceptional lawn care packages in Charlotte. Tailored, reliable, eco-friendly solutions."
+          content="Keep your lawn healthy and beautiful with our expert lawn care services. We offer professional leaf blowing, fertilization, and maintenance for lush, green lawns year-round"
         />
 
-        <title>Lawn Care | Regenerative Landscape and Garden</title>
+        <title>Expert Lawn Care Services | Regenerative Landscape and Garden</title>
       </Helmet>
       <div className="w-full h-[80px] bg-green-950"></div>
       <div className="flex flex-col lg:flex-row justify-center items-center gap-6 lg:h-[90vh] px-2 md:pl-5 bg-bannerlawn bg-no-repeat bg-cover ">

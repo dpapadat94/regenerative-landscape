@@ -66,9 +66,9 @@ const Gallary = () => {
     <div id="gallery">
       <div className="hidden md:flex  w-full h-full shadow-md  m-auto">
         <div className="w-[100%] h-[780px] m-auto py-16 px-16 text-gray-700 relative text-center  ">
-          <h1 className="text-4xl mb-5 pb-2 font-bold m-x-auto  ">
+          <h2 className="text-4xl mb-5 pb-2 font-bold m-x-auto  ">
             See Our Work
-          </h1>
+          </h2>
           <picture>
             <source srcSet={slides[currentIndex].urlwebp} type="image/webp" />
             <img
@@ -92,9 +92,9 @@ const Gallary = () => {
         </div>
       </div>
       <div className="flex h-fit flex-col gap-3 items-center md:hidden">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-600 p-3 my-3 border-b-4 border-green-500">
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-600 p-3 my-3 border-b-4 border-green-500">
           Gallery
-        </h1>
+        </h2>
         {slides.map((item, index) => (
           <picture key={index + 10}>
             <source srcSet={item.urlwebp} type="image/webp" />

@@ -42,7 +42,7 @@ const LawnCarePage = () => {
       <Helmet>
         <meta
           name="description"
-          content="Keep your lawn healthy and beautiful with our expert lawn care services. We offer professional leaf blowing, fertilization, and maintenance for lush, green lawns year-round"
+          content="Transform your outdoor space with Regenerative Landscape and Garden—Charlotte's premier landscaping experts. Stunning, sustainable, superior."
         />
 
         <title>Expert Lawn Care Services | Regenerative Landscape and Garden</title>

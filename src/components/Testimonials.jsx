@@ -14,9 +14,9 @@ const Testimonials = () => {
 
   return (
     <div className="w-full h-fit py-12 flex flex-col justify-center items-center gap-8 bg-vision">
-      <h1 className=" text-start text-3xl sm:text-4xl text-white font-bold pb-4 w-[90%] md:w-[68%] border-b-4 border-white ">
+      <h2 className=" text-start text-3xl sm:text-4xl text-white font-bold pb-4 w-[90%] md:w-[68%] border-b-4 border-white ">
         Customer Testimonials{" "}
-      </h1>
+      </h2>
       <Slider className="w-[80%] sm:w-[70%] shadow-xl   " {...settings}>
         {testimonialData.map((item) => (
           <div

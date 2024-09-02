@@ -66,9 +66,9 @@ const LawnCarePage = () => {
               </>
             ) : (
               <>
-                <h1 className="text-3xl sm:4xl lg:text-6xl mt-8 lg:mt-0  font-bold mb-2">
+                <h2 className="text-3xl sm:4xl lg:text-6xl mt-8 lg:mt-0  font-bold mb-2">
                   {currentPackage.title}
-                </h1>
+                </h2>
                 <p className="text-xl sm:text-2xl mb-4">
                   Schedule a Free Estimate
                 </p>
@@ -84,7 +84,7 @@ const LawnCarePage = () => {
             ))}
           </div>
           <div className="text-center">
-            <h1 className="mb-3">Other Lawn Care Packages</h1>
+            <h2 className="mb-3">Other Lawn Care Packages</h2>
             <div className="flex flex-col md:flex-row justify-center gap-5">
               <Link
                 className="border-2 p-2 min-w-[15em] bg-green-500"
@@ -106,9 +106,9 @@ const LawnCarePage = () => {
           onSubmit={onSubmit}
           className="bg-white flex flex-col justify-between gap-8 m-10 h-fit w-[80%] lg:w-[33%] p-8 "
         >
-          <h1 className="font-bold text-2xl md:text-3xl">
+          <h2 className="font-bold text-2xl md:text-3xl">
             Schedule Free Estimate
-          </h1>
+          </h2>
           <p className="font-light">
             {" "}
             Call <span className="font-bold"> 980-579-6001</span> or fill out

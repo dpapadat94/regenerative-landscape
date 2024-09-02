@@ -41,10 +41,10 @@ const GardenPage = () => {
       <Helmet>
         <meta
           name="description"
-          content="Explore Regenerative Landscape and Garden's exceptional garden care packages in Charlotte. Tailored, reliable, eco-friendly solutions."
+          content="Ensure your garden thrives year-round with expert care from Regenerative Landscape. We provide sustainable garden maintenance and personalized solutions in North Carolina."
         />
 
-        <title>Garden Care | Regenerative Landscape and Garden</title>
+        <title>Expert Garden Care Services | Regenerative Landscape and Garden</title>
       </Helmet>
 
       <div className="w-full h-[80px] bg-green-950"></div>

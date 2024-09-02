@@ -18,6 +18,19 @@ const Home = () => {
         <meta name="google-site-verification" content="Kf8kfrrBuPspakauekp_fFFQyuHcRC3RgpQnipsOC0Q" />
         <meta name="msvalidate.01" content="44C1252E11FD5698771A9EF6B5E68BF0" />
         <meta name="yandex-verification" content="f0f0f695dfc85b39" />
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "name": "Regenerative Landscape and Garden",
+  "url": "https://regenerativelandscapeclt.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://regenerativelandscapeclt.com/garden/residential{search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
         <title>Regenerative Landscape and Garden: North Carolina's Top Garden Experts</title>
       </Helmet>
       <Hero />

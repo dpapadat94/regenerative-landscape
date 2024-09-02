@@ -38,6 +38,7 @@ const LawnCarePage = () => {
   };
 
   return (
+<>
       <Helmet>
         <meta
           name="description"

@@ -38,12 +38,10 @@ const LawnCarePage = () => {
   };
 
   return (
-    <>
       <Helmet>
         <meta
           name="description"
-          content="Keep your lawn healthy and beautiful with our expert lawn care services. We offer professional mowing, fertilization, and maintenance for lush, green lawns year-round"
-        />
+          content="Keep your lawn healthy and beautiful with our expert lawn care services. We offer professional mowing, fertilization, and maintenance for lush, green lawns year-round"/>
 
         <title>Expert Lawn Care Services | Regenerative Landscape and Garden</title>
       </Helmet>

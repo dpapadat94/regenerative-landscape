@@ -10,9 +10,9 @@ const ServiceArea = () => {
       className="flex  justify-center w-full h-fit p-2 sm:p-6 "
     >
       <div className="flex flex-col w-[100%] sm:w-[90%] md:w-[50%] gap-12  ">
-        <h1 className="text-2xl font-bold text-center">
+        <h2 className="text-2xl font-bold text-center">
           Serving Charlotte and the Surrounding Areas
-        </h1>
+        </h2>
         <div className="flex justify-evenly ">
           <div className=" text-xl sm:text-2xl flex flex-col gap-4 font-light">
             <p className="flex items-center gap-1">

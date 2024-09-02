@@ -13,9 +13,9 @@ const Home = () => {
       <Helmet>
         <meta
           name="description"
-          content="Transform your outdoor space with Regenerative Landscape and Garden—Charlotte's premier landscaping experts. Stunning, sustainable, superior."
+          content="Transform your outdoor space with Regenerative Landscape and Garden, North Carolina’s premier experts in sustainable landscaping, personalized garden design, and professional garden care services."
         />
-        <title>Regenerative Landscape and Garden</title>
+        <title>Regenerative Landscape and Garden: North Carolina's Top Garden Experts</title>
       </Helmet>
       <Hero />
       <Services />

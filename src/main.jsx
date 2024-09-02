@@ -11,3 +11,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </HelmetProvider>
   </React.StrictMode>
 );
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Regenerative Landscape and Garden",
+  "url": "https://regenerativelandscapeclt.com",
+  "logo": "https://regenerativelandscapeclt.com/assets/logoWordsWhite-BnUhoxVJ.png",
+  "sameAs": "https://www.instagram.com/regenerativelandscapeclt/"
+}
+</script>

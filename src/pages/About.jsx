@@ -9,7 +9,7 @@ const About = () => {
           content="Discover the passion behind Regenerative Landscape and Garden—Charlotte's trusted landscaping team dedicated to excellence and sustainability."
         />
 
-        <title>About | Regenerative Landscape and Garden</title>
+        <title>Learn More About Regenerative Landscape and Garden</title>
       </Helmet>
       <div className="w-full h-[80px] bg-green-950"></div>
       <div className="w-full h-fit sm:h-fit flex flex-col justify-center items-center bg-aboutbg bg-no-repeat bg-cover">

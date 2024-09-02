@@ -35,7 +35,7 @@ const Contact = () => {
           content="Get in contact with Regenerative Landscape and Garden of Charlotte. Tailored, Give us a call or submit or free estimate form."
         />
 
-        <title>Contact | Regenerative Landscape and Garden</title>
+        <title>Contact Us | Regenerative Landscape and Garden</title>
       </Helmet>
       <div className="w-full h-[80px] bg-green-950"></div>
       <div className="w-full h-fit sm:h-[80vh] flex flex-col sm:flex-row">

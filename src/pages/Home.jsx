@@ -17,6 +17,7 @@ const Home = () => {
         />
         <meta name="google-site-verification" content="Kf8kfrrBuPspakauekp_fFFQyuHcRC3RgpQnipsOC0Q" />
         <meta name="msvalidate.01" content="44C1252E11FD5698771A9EF6B5E68BF0" />
+        <meta name="yandex-verification" content="f0f0f695dfc85b39" />
         <title>Regenerative Landscape and Garden: North Carolina's Top Garden Experts</title>
       </Helmet>
       <Hero />

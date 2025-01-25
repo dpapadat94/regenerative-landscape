@@ -45,12 +45,12 @@ const Contact = () => {
           </h1>
           <div className="flex flex-col gap-5">
             <div className="flex-flex-col text-center">
-              <h2 className="text-xl font-bold">Phone:</h2>
+              <h2 className="text-xl font-bold">phone:</h2>
               <p className="text-xl ">980-579-6001</p>
             </div>
 
             <div className="text-center">
-              <p className="font-bold text-xl">Social:</p>
+              <p className="font-bold text-xl">social:</p>
               <div className="flex gap-2 justify-center items-center">
                 {" "}
                 <a href="https://www.instagram.com/regenerativelandscapeclt/">

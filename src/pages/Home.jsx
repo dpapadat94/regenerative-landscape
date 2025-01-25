@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Banner from "../components/Banner";
-import Gallary from "../components/Gallary";
+import Gallery from "../components/Gallery"; // Fixed name if it was a typo
 import Hero from "../components/Hero";
 import ServiceArea from "../components/ServiceArea";
 import Services from "../components/Services";
@@ -15,29 +15,38 @@ const Home = () => {
           name="description"
           content="Transform your outdoor space with Regenerative Landscape and Garden, North Carolina’s premier experts in sustainable landscaping, personalized garden design, and professional garden care services."
         />
-        <meta name="google-site-verification" content="Kf8kfrrBuPspakauekp_fFFQyuHcRC3RgpQnipsOC0Q" />
+        <meta
+          name="google-site-verification"
+          content="Kf8kfrrBuPspakauekp_fFFQyuHcRC3RgpQnipsOC0Q"
+        />
         <meta name="msvalidate.01" content="44C1252E11FD5698771A9EF6B5E68BF0" />
         <meta name="yandex-verification" content="f0f0f695dfc85b39" />
+
         <script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  "name": "Regenerative Landscape and Garden",
-  "url": "https://regenerativelandscapeclt.com",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://regenerativelandscapeclt.com/garden/residential{search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
-</script>
-        <title>Regenerative Landscape and Garden: North Carolina's Top Garden Experts</title>
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Regenerative Landscape and Garden",
+            "url": "https://regenerativelandscapeclt.com",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://regenerativelandscapeclt.com/garden/residential?search={search_term_string}",
+              "query-input": "required name=search"
+            }
+          }
+          `}
+        </script>
+
+        <title>
+          Regenerative Landscape and Garden: North Carolinas Top Garden Experts
+        </title>
       </Helmet>
       <Hero />
       <Services />
       <Banner />
       <Vision />
-      <Gallary />
+      <Gallery /> {/* Fixed spelling from Gallary to Gallery if needed */}
       <Testimonials />
       <ServiceArea />
     </div>

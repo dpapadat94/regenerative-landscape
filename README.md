@@ -1,8 +1,42 @@
-# React + Vite
+# 🌿 Regenerative Landscape Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive website designed and developed for **Regenerative Landscape**, a landscaping company serving the Charlotte, NC area. The site showcases the company's services, highlights completed work, and provides an easy way for potential customers to get in touch.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Website
+
+https://regenerativelandscapeclt.com
+
+---
+
+## 📸 Screenshots
+
+### Homepage
+
+<img src="images/Homepage.png" width="800">
+
+### Services
+
+<img src="images/Services.png" width="800">
+
+---
+
+## 🚀 Features
+
+- Responsive design for desktop, tablet, and mobile
+- Service showcase
+- Contact form
+- Customer testimonials
+- Modern user interface
+
+---
+
+## 🛠️ Tech Stack
+
+- React
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+- Tailwind CSS
